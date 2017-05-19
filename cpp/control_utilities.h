@@ -39,7 +39,7 @@ namespace control_utilities {
   // NOTES:         None.                                                    //
   //                                                                         //
   /////////////////////////////////////////////////////////////////////////////
-  char waitForAnyKey();
+  int waitForAnyKey();
 }
 
 #endif

@@ -30,7 +30,7 @@ namespace PrioritySearchTree {
   // General functions                                                         //
   ///////////////////////////////////////////////////////////////////////////////
   int indexOfParent(int index) { // base 1
-    return floor(index/2);
+    return static_cast<int>(floor(index/2));
   }
   int indexOfLeftChild(int index) { // base 1
     return (2*index);

@@ -30,7 +30,7 @@ int main(int argv, char** argc) {
   /////////////////////////////////////////////////////////////////////////////
   // Seed the PRNG                                                           //
   /////////////////////////////////////////////////////////////////////////////
-  srand( time(0) );
+  srand( static_cast<unsigned int>(time(0)) );
   /////////////////////////////////////////////////////////////////////////////
   // Ensure the user has entered required parameters, otherwise print        //
   // a helpful message and bail out.                                         //

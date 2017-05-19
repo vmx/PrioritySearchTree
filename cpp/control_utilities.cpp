@@ -21,7 +21,7 @@
 using namespace std;
 
 namespace control_utilities {
-  char waitForAnyKey() {
+  int waitForAnyKey() {
     cout << "Press any key to continue..." << flush;
     int ch;
     struct termios oldt;
