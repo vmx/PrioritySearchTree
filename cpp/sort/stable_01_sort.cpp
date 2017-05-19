@@ -269,11 +269,9 @@ void algorithm_B(PSTPoint* array, int begin, int end, const PSTPoint& s) {
     int i = start;
     // find the blocksize'th zero
     int nZero = 0;
-    bool prevElementWasZero = true;
     while(nZero < blockSize && ++i <= end) {
       if(isZero(array[i],s)) {
         nZero++;
-        prevElementWasZero = true;
       }
     }
     // if zeroes not contiguous, partition them
