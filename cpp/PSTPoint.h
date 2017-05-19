@@ -31,7 +31,7 @@ using std::basic_ostream;
 
 namespace PrioritySearchTree {
   typedef int coord_t;
-  
+
   class PSTPoint {
     coord_t x, y;
     void setX(coord_t new_x);
@@ -45,7 +45,7 @@ namespace PrioritySearchTree {
     { }
     coord_t getX() const { return x; }
     coord_t getY() const { return y; }
-  
+
     /////////////////////////////////////////////////////////////////////////////
     // Implemented in PSTPoint.cpp                                             //
     /////////////////////////////////////////////////////////////////////////////

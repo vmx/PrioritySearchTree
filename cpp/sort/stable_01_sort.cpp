@@ -267,7 +267,7 @@ void algorithm_B(PSTPoint* array, int begin, int end, const PSTPoint& s) {
       start < end;
       start += blockSize) {
     int i = start;
-    // find the blocksize'th zero     
+    // find the blocksize'th zero
     int nZero = 0;
     bool prevElementWasZero = true;
     while(nZero < blockSize && ++i <= end) {
@@ -280,7 +280,7 @@ void algorithm_B(PSTPoint* array, int begin, int end, const PSTPoint& s) {
     if(i != start+blockSize)
       simple_partition(array,start,i,s);
   }
-  
+
   /////////////////////////////////////////////////////////////////////////////
   // Step 4: rearrange blocks                                                //
   /////////////////////////////////////////////////////////////////////////////
@@ -329,12 +329,12 @@ void algorithm_B(PSTPoint* array, int begin, int end, const PSTPoint& s) {
   //     } while(i != k);
   //   }
   // }
-  
-  
+
+
   /////////////////////////////////////////////////////////////////////////////
   // Step 5: clean up any remaining zeroes in the last block                 //
   /////////////////////////////////////////////////////////////////////////////
-  
+
 }
 
 ///////////////////////////////////////////////////////////////////////////////
