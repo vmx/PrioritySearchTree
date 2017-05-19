@@ -37,7 +37,7 @@ int main(int argv, char** argc) {
   /////////////////////////////////////////////////////////////////////////////
   if(argv < 3) {
     cout << "Usage: test_pst [number of points] [query iterations] "
-	 << "[enumerate iterations]" << endl;
+         << "[enumerate iterations]" << endl;
     return 1;
   }
   // parse number of points

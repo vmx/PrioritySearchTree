@@ -60,7 +60,7 @@ namespace PrioritySearchTree {
   /////////////////////////////////////////////////////////////////////////////
   template <typename CharT, typename Traits>
   basic_ostream<CharT, Traits>& operator<<(basic_ostream<CharT, Traits>& out,
-					   const PSTPoint& p) {
+                                           const PSTPoint& p) {
     return out<< "(" << p.getX() << "," << p.getY() << ")";
   }
 }
