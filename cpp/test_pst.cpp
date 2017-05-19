@@ -18,7 +18,6 @@
 #include "PSTPoint.h"
 #include "InPlacePST.h"
 #include "array_utilities.h"
-#include "control_utilities.h"
 
 using namespace std;
 using namespace PrioritySearchTree;

@@ -27,8 +27,6 @@ sort/heap_sort.o: PSTPoint.o array_utilities.o sort/heap_sort.h
 
 sort/stable_01_sort.o: PSTPoint.o array_utilities.o sort/stable_01_sort.h
 
-control_utilities.o: control_utilities.h
-
 array_utilities.o: PSTPoint.o array_utilities.h
 
 PSTPoint.o: PSTPoint.h
