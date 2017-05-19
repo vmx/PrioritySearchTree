@@ -104,7 +104,7 @@ namespace PrioritySearchTree {
     return tree[n-1];
   }
 
-  void InPlacePST::inPlaceSort(int begin, int end, const PSTPoint& s) {
+  void InPlacePST::inPlaceSort(int begin, int end) {
     heap_sort(tree,begin-1,end-1);
   }
 
@@ -122,8 +122,6 @@ namespace PrioritySearchTree {
     int A = n - (powerOf2(h) - 1);
     // the first k nodes are roots of subtrees of size k1
     int k = (int)(A/powerOf2(h-i));
-    // s is the median value
-    PSTPoint s = getPoint(powerOf2(i+1));
     // the first k nodes are roots of subtrees of size k1
     int k1 = powerOf2(h+1-i) - 1;
     // the (k+1)-st node is the root of subtree of size k2
@@ -166,7 +164,7 @@ namespace PrioritySearchTree {
       }
     }
     // Finally, sort all points past the current level
-    inPlaceSort(powerOf2(i+1),n,s);
+    inPlaceSort(powerOf2(i+1),n);
   }
   int InPlacePST::numberOfChildren(int index) { // base 1
     if(indexOfLeftChild(index) > npoints) return 0;

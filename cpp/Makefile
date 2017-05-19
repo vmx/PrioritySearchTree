@@ -1,9 +1,9 @@
 # compile with debug information
 ifeq ($(mode),release)
-	CXXFLAGS=-O2 -Wall
+	CXXFLAGS=-O2 -Wall -Wextra
 else
 	mode = debug
-	CXXFLAGS=-O0 -g -Wall
+	CXXFLAGS=-O0 -g -Wall -Wextra
 endif
 
 all: test_sort test_partition test_pst test_leda

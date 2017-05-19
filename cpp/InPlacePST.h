@@ -32,7 +32,7 @@ namespace PrioritySearchTree {
     InPlacePST() {}
     void buildLevel(int i, int n);
     void swap(int a, int b);
-    void inPlaceSort(int begin, int end, const PSTPoint& s);
+    void inPlaceSort(int begin, int end);
     int numberOfChildren(int index);
     bool isLeaf(int index);
     void explore(int indexP, coord_t ymin, vector<PSTPoint>* points);
